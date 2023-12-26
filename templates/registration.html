@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container m-3">
+    <form method="POST" action="{{ url_for('register') }}">
+        <input type="text" name="name" placeholder="Имя">
+        <input type="text" name="last_name" placeholder="Фамилия">
+        <input type="text" name="email" placeholder="Электронная почта">
+        <input type="password" name="password" placeholder="Пароль">
+        <input type="submit" value="Зарегистрироваться">
+
+    </form>
+
+</div>
+
+{% endblock content %}
